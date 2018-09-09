@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>neurone.central</groupId>
+  <artifactId>appUploadAvecJspEtServlet</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>appUploadAvecJspEtServlet Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<!-- Web -->
+	<jsp.version>2.3.1</jsp.version>
+	<jstl.version>1.2</jstl.version>
+	<servlet.version>3.1.0</servlet.version>
+	
+	<!-- Logging -->
+	<logback.version>1.0.13</logback.version>
+	
+	<!-- Junit -->
+	<junit.version>4.12</junit.version>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>javax.servlet-api</artifactId>
+    	<version>${servlet.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet.jsp</groupId>
+    	<artifactId>javax.servlet.jsp-api</artifactId>
+    	<version>${jsp.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>jstl</artifactId>
+    	<version>${jstl.version}</version>
+    </dependency>
+    
+    <!-- Bootstrap -->
+    <dependency>
+    	<groupId>org.webjars</groupId>
+    	<artifactId>bootstrap</artifactId>
+    	<version>4.1.0</version>
+	</dependency>
+	
+	<!-- Junit -->   
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>appUploadAvecJspEtServlet</finalName>
+  </build>
+</project>
